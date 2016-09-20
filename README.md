@@ -1,8 +1,8 @@
 # git-profiles
 
-*Directory-based configuration management for Git*
-Add a fourth directory-level config file to your git configuration loader.
-Manage any Git config settings on a directory-based level!
+Directory-based configuration management for Git -- simplified.
+Add a fourth config file to your git configuration loader. Manage any Git
+config settings on a directory-based level!
 
 ## Overview
 
