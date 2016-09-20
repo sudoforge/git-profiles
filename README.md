@@ -41,8 +41,8 @@ Next, run the install command.
 
     sh install.sh
 
-_This adds a line to your existing runcom script(s) like `.bashrc` or `.zshrc`
-that sources the wrapper function included in this repository._
+This adds a line to your existing runcom script(s) like `.bashrc` or `.zshrc`
+that sources the wrapper function included in this repository.
 
 ## Usage
 
@@ -85,11 +85,9 @@ These `.gitprofile` files work exactly like a `.gitconfig` file:
     email = bob@office.xyz
 ```
 
-Tip: Set keys and values using git by adding the `--file` option!
-
-```shell
-git config --file /code/office/.gitprofile user.name "Bob Mcbobberson"
-```
+> Tip: Set keys and values using git by adding the `--file` option!
+>
+> `$ git config --file /code/office/.gitprofile user.name "Bob Mcbobberson"`
 
 ### Next, tell the global configuration about it
 
@@ -101,7 +99,7 @@ git config --global --add profile.path /code/client
 
 This adds a key/value pair in your global configuration.
 
-### Work, work
+### That's all, folks!
 
-Next, run `git` commands like you normally would and
-watch the magic work!
+The next time you run a `git` command, your configured directory profiles
+will be picked up.
