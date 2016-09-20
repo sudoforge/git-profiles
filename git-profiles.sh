@@ -11,7 +11,7 @@ git() {
     fi
 
     # Check to see if we have a valid .gitprofile
-    local locations="${GIT_PROFILES_GIT_COMMAND} config --global --get-all profiles.location"
+    local locations="${GIT_PROFILES_GIT_COMMAND} config --global --get-all profiles.path"
     local current_dir=""
     for location in $(eval "${locations}"); do
         current_dir=$(echo "${PWD}" | sed -r 's;^'"${location}"';;')
