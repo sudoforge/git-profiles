@@ -1,7 +1,9 @@
-# Directory-based profiles for Git
+# git-profiles
 
-Add a fourth, workspace-level configuration file to your git profiles.
-Manage your identity (and other settings) on a directory-based level!
+*Directory-based configuration management*
+
+Add a fourth directory-level config file to your git configuration loader.
+Manage any Git config settings on a directory-based level!
 
 ## Overview
 
