@@ -30,7 +30,7 @@ This project provides a custom shell function named `git()`, which handles
 temporarily injecting a workspace profile into your global configuration,
 so that it overrides global settings, but is overridden by any local settings.
 It accomplishes this by looking for a `.gitprofile` file inside any directories
-defined in your global configuration's `profiles.location` keys.
+defined in your global configuration's `profiles.path` keys.
 
 ## Installation
 
