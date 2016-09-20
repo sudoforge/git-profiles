@@ -8,6 +8,7 @@ fi
 git() {
     if [ ! -e "${GIT_PROFILES_GIT_COMMAND}" ]; then
         echo "Git does not seem to be installed. Exiting."
+        exit 1
     fi
 
     # Check to see if we have a valid .gitprofile
