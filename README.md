@@ -35,11 +35,11 @@ defined in your global configuration's `profiles.location` keys.
 
 First, clone the repository to your local machine.
 
-    git clone https://github.com/bddenhartog/git-directory-profiles
+    git clone https://github.com/bddenhartog/git-profiles
 
 Next, run the install command.
 
-    sh install.sh
+    make install
 
 This adds a line to your existing runcom script(s) like `.bashrc` or `.zshrc`
 that sources the wrapper function included in this repository.
