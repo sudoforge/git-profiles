@@ -1,7 +1,6 @@
 # git-profiles
 
-*Directory-based configuration management*
-
+*Directory-based configuration management for Git*
 Add a fourth directory-level config file to your git configuration loader.
 Manage any Git config settings on a directory-based level!
 
@@ -43,8 +42,20 @@ Next, run the install command.
 
     make install
 
-This adds a line to your existing runcom script(s) like `.bashrc` or `.zshrc`
-that sources the wrapper function included in this repository.
+This adds a line to your existing runcom script(s) that source `git-profiles.sh`
+so that the `git()` wrapper function overrides your calls to `git <command>`.
+Make sure to start a new shell session after installation.
+
+Automatic installation currently supports:
+
+- Bash - `.bashrc`
+- Zshell - `.zshrc`
+- MirBSD Korn - `.mkshrc`
+
+> If the runcom you use isn't listed above, you can install **git-profiles**
+> manually by sourcing the script directly:
+>
+>`source "/path/to/git-profiles.sh"`
 
 ## Usage
 
@@ -101,7 +112,7 @@ git config --global --add profile.path /code/client
 
 This adds a key/value pair in your global configuration.
 
-### That's all, folks!
+### That's all, folks
 
 The next time you run a `git` command, your configured directory profiles
 will be picked up.
