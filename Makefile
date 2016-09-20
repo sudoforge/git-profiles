@@ -1,5 +1,5 @@
 .PHONY: install
 
 install:
-	chmod +x install.sh
-	./install.sh
+	chmod +x lib/install.sh
+	./lib/install.sh
