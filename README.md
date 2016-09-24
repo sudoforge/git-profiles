@@ -36,7 +36,7 @@ defined in your global configuration's `profiles.path` keys.
 
 First, clone the repository to your local machine.
 
-    git clone https://github.com/bddenhartog/git-profiles
+    git clone https://github.com/bddenhartog/git-profiles.git
 
 Next, run the install command.
 
