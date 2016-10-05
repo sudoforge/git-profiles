@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 GIT_PROFILES_GIT_COMMAND=""
-if command -v git > /dev/null 2>&1; then
-    GIT_PROFILES_GIT_COMMAND=$(command -v git)
+if which git > /dev/null 2>&1; then
+    GIT_PROFILES_GIT_COMMAND=$(which git)
 fi
 
 git() {
