@@ -1,8 +1,19 @@
 #!/usr/bin/env sh
 
+which_func() {
+    local filename=$1 path_to_check
+    for path_to_check in $(echo $PATH | sed 's/:/ /g'); do
+        if [ -x "$path_to_check/$filename" ]; then
+            echo "$path_to_check/$filename"
+            return 0
+        fi
+    done
+    return 1
+}
+
 GIT_PROFILES_GIT_COMMAND=""
-if which git > /dev/null 2>&1; then
-    GIT_PROFILES_GIT_COMMAND=$(which git)
+if which_func git > /dev/null 2>&1; then
+    GIT_PROFILES_GIT_COMMAND=$(which_func git)
 fi
 
 git() {
