@@ -105,12 +105,17 @@ These `.gitprofile` files work exactly like a `.gitconfig` file:
 ### Next, tell the global configuration about it
 
 ```shell
-git config --global --add profile.path /code/office
-git config --global --add profile.path /code/personal
-git config --global --add profile.path /code/client
+git config --global --add profiles.path /code/office
+git config --global --add profiles.path /code/personal
+git config --global --add profiles.path /code/client
 ```
 
 This adds a key/value pair in your global configuration.
+
+> **NOTE**
+> If you previously added paths with `profile.path`, you should
+> edit your global configuration file and change the `[profile]`
+> section to `[profiles]`. See #4 for more information.
 
 ### That's all, folks
 
