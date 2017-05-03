@@ -115,9 +115,11 @@ This adds a key/value pair in your global configuration.
 > **NOTE**
 > If you previously added paths with `profile.path`, you should
 > edit your global configuration file and change the `[profile]`
-> section to `[profiles]`. See #4 for more information.
+> section to `[profiles]`. See [this issue][issue-4] for more information.
 
 ### That's all, folks
 
 The next time you run a `git` command, your configured directory profiles
 will be picked up.
+
+[issue-4]: https://github.com/bddenhartog/git-profiles/issues/4
